@@ -4,7 +4,7 @@ RUN apt-get update
 
 RUN apt-get install nginx -y
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get -yq install apt-utils
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 
 COPY index.html /var/www/html/
 

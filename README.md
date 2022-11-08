@@ -1,3 +1,3 @@
 # github-actions-demo
 
-triggering the github actions flow
+triggering the github actions flow.

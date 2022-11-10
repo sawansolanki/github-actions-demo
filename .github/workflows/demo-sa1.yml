@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+    branches: [ main ]
+
+name : demo-workflow-sa1
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: Very Simple Hello World
+      uses: phwes/simple_hello_world@v1
